@@ -19,6 +19,11 @@
 
   /* add your own custom fonts here */
 
+/*
+#Typography
+
+Styleguide 1.0
+*/
   @font-face {
       font-family: 'CamboRegular';
       src: url('../webfonts/Cambo-Regular-webfont.eot');
@@ -35,9 +40,22 @@
   }
 
 
-/* BASE TYPOGRPHY */
+/*
+#Base typography
 
-/* These are the default styles for the Simple theme */
+Markup:
+<body>
+    <p>
+        random text, don't read it... seriousl, stop it, it's not interesting at all, I'm just trying to get the line to wrap... still not there...
+so, how you doing? oh, look at that, line wrap, I'm done
+    </p>
+</body>
+<body>
+    This is <a href="#">a sexy link</a>
+</body>
+
+Styleguide 1.1
+*/
 body {
     font-size: 13px; /* This overrides the browsers default font size */
     line-height: 20px; /* If you change the font-size make sure you change the line-height value as well - the usual ratio is around 1.5 (font-size x 1.5 = line-height) */
@@ -49,7 +67,21 @@ body {
   body a:link { -webkit-tap-highlight-color: #b80000 } /* this sets the highlight color when links are tapped on Safari (browser) on iPhone */
 
 
-/* HEADERS */
+/*
+#Headings
+
+Markup:
+<p class="typography">
+    <h1>Heading One</h1>
+    <h2>Heading Two</h2>
+    <h3>Heading Three</h3>
+    <h4>Heading Four</h4>
+    <h5>Heading Five</h5>
+    <h6>Heading Six</h6>
+</p>
+
+Styleguide 1.1.1
+*/
 .typography h1,
 .typography h2,
 .typography h3,
@@ -75,7 +107,24 @@ body {
 .typography h6 { font-size: 14px; line-height: 20px; font-weight: bold; margin-bottom: 5px; }
 
 
-/* PARAGRAGHS */
+/*
+#Paragraphs
+
+Markup:
+<div class="typography">
+    <p>
+        Another text... whasup?
+    </p>
+    <div class="intro">
+        I can also be an intro, so introducing...
+    </div>
+    <em>
+        ... italics! (act surprised)
+    </em>
+</div>
+
+Styleguide 1.1.2
+*/
 .typography  p { font-size: 13px; line-height: 20px; margin: 0 0 20px; }
   .typography .intro {
       font-family: "CamboRegular", Georgia, "Times New Roman", Times, serif;
@@ -92,7 +141,19 @@ body {
     text-shadow: none;
 }
 
-/* LINKS */
+/*
+#Links
+
+Markup:
+<div class="typography">
+    <a>More sexy links, yaaaay. Cmon', hover over me, I dare you!</a><br>
+    <a class="intro">
+        And a link in an intro
+    </a>
+</div>
+
+Styleguide 1.1.3
+*/
 .typography a, 
 .typography a.intro {
     color: #B80000;
@@ -103,10 +164,129 @@ body {
     border-bottom: 1px dashed #B80000;
   }
   .typography a:focus { }
+  
+  
+/*
+#Blockquotes
+
+Markup:
+<div class="typography">
+    <blockquote cite="#">
+        Some quote
+    </blockquote>
+    <blockquote cite="#">
+        <p>With a paragraph in it</p>
+    </blockquote>
+</div>
+
+Styleguide 1.1.4
+*/
+.typography blockquote {
+  background: transparent url(../images/blockquote.png) no-repeat 0px 6px;
+  font-family: "CamboRegular", Georgia, "Times New Roman", Times, serif;
+  color: #777;
+  display: block;
+  font-style: italic;
+  margin: 0 0 20px;
+  /*float: right;*/
+  text-indent: 30px;
+  width: 50%;
+  margin-left: 5%;
+  clear: both;
+}
+.typography blockquote p {
+  font-size: 17px;
+  line-height: 25px;
+}
+
+/*
+#Pre
+
+Markup:
+<div class="typography">
+    <pre>
+    <?
+        if (stuff)
+            echo 'yay';
+    ?>
+    </pre>
+</div>
+
+Styleguide 1.1.5
+*/
+.typography pre {
+  background: #F7F7F7;
+  border: 1px solid #E4E4E4;
+  font-family: Courier, monospace;
+  margin: 0 0 20px 0;
+  padding: 15px;
+  clear: both;
+}
+
+/*
+#Address
+
+Markup:
+    <address>123 Normal St, Mars, Solar System</address>
+
+Styleguide 1.1.6
+*/
+address {
+  display: block;
+  margin-bottom: 20px;
+}
 
 
 /* LIST STYLES
 -------------------------------------------- */
+/*
+#Lists
+
+Styleguide 1.2
+*/
+
+/*
+#Unordered list 
+
+Markup:
+<div class="typography">
+    Unorder list
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+    </ul>
+</div>
+
+Styleguide 1.2.1
+*/
+/*
+#Ordered list
+
+Markup:
+<div class="typography">
+    Order list
+    <ol>
+        <li>First</li>
+        <li>Second</li>
+    </ol>
+</div>
+
+Styleguide 1.2.2
+*/
+/*
+#Description list
+
+Markup:
+<div class="typography">
+    Dl list
+    <dl>
+        <dt>First</dt>
+        <dt>Second</dt>
+    </dl>
+</div>
+
+Styleguide 1.2.3
+*/
 .typography ul, 
 .typography ol,
 .typography dl { margin: 0 0 20px 25px; }
@@ -114,8 +294,33 @@ body {
   .typography li { margin-bottom: 5px; }
 
 
-/* TABLE STYLES
--------------------------------------------- */
+/*
+#Tables
+
+Markup:
+<div class="typography">
+    <table>
+        <tr>
+            <th>Heading 1</th>
+            <th>Heading 2</th>
+        </tr>
+        <tr>
+            <td>some value</td>
+            <td>another value</td>
+        </tr>
+        <tr>
+            <td>2 some value</td>
+            <td>3 another value</td>
+        </tr>
+        <tr>
+            <td>242523</td>
+            <td>rabbit</td>
+        </tr>
+    </table>
+</div>
+
+Styleguide 1.3
+*/
 .typography table {
     border-collapse: collapse; /* borders are collapsed into a single border when possible */
     border: 1px solid #d4d4d4;
@@ -141,22 +346,20 @@ body {
       font-weight: bold;
   }
 
+/*
+#Images
 
-/* WYSIWYG EDITOR ALIGNMENT CLASSES 
--------------------------------------------- */
-.typography .left {
-    text-align: left
-}
-.typography .center {
-    text-align: center
-}
-.typography .right {
-    text-align: right
-}
+Markup:
+<div class="typography">
+    <img src="http://www.spcaotago.org.nz/files/1321856638204.jpg">
+    <img class="left" src="http://www.lovethispic.com/uploaded_images/90725-Colorful-Kittens.jpg">
+    <img class="right" src="http://images6.fanpop.com/image/photos/34800000/Kittens-3-animals-34865509-1680-1050.jpg">
+    <img class="leftAlone" src="http://www.dumpaday.com/wp-content/uploads/2013/03/small-kitten.jpg">
+    <img class="center" src="http://img.izismile.com/img/img5/20120406/640/awww_adorable_kittens_640_100.jpg">
+</div>
 
-
-/* IMAGES 
--------------------------------------------- */
+Styleguide 1.4
+*/
 .typography img {
     border: 5px solid #d7d7d7;
     height: auto; /* resets the image height so that it maintains its aspect ratio when width is set */
@@ -186,6 +389,20 @@ body {
     margin-bottom: 10px;
     clear: both;
 }
+
+/*
+#Images with captions
+
+Markup:
+<div class="typography">
+    <div class="captionImage">
+        <img src="http://static.comicvine.com/uploads/original/11113/111134695/3891245-4936569595-cute-.jpg">
+        <p>Look at the kitty!</p>
+    </div>
+</div>
+
+Styleguide 1.4.1
+*/
 .typography .captionImage { width: 100%; margin-top: 5px; }
 .typography .captionImage img { margin: 0; }
   .typography .captionImage.left {
@@ -232,37 +449,24 @@ body {
 }
 
 
-/* BLOCKQUOTES
--------------------------------------------- */
-.typography blockquote {
-  background: transparent url(../images/blockquote.png) no-repeat 0px 6px;
-  font-family: "CamboRegular", Georgia, "Times New Roman", Times, serif;
-  color: #777;
-  display: block;
-  font-style: italic;
-  margin: 0 0 20px;
-  float: right;
-  text-indent: 30px;
-  width: 50%;
-  margin-left: 5%;
-  clear: both;
-}
-.typography blockquote p {
-  font-size: 17px;
-  line-height: 25px;
-}
-.typography pre {
-  background: #F7F7F7;
-  border: 1px solid #E4E4E4;
-  font-family: Courier, monospace;
-  margin: 0 0 20px 0;
-  padding: 15px;
-  clear: both;
-}
+/*
+#Alignment classes
 
-/* ADDRESS
--------------------------------------------- */
-address {
-  display: block;
-  margin-bottom: 20px;
+Markup:
+<div class="typography">
+    <p class="left">left</p>
+    <p class="center">center</p>
+    <p class="right">right</p>
+</div>
+
+Styleguide 1.5
+*/
+.typography .left {
+    text-align: left
+}
+.typography .center {
+    text-align: center
+}
+.typography .right {
+    text-align: right
 }
