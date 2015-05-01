@@ -112,14 +112,14 @@ Styleguide 2.0
 #Full Width Layout
 
 Markup:
-<body class="Page">
+<div class="Page">
     <header class="header"></header>
     <div class="main">
         <h1>Full Width Layout</h1>
     </div>
-</body>
+</div>
 
-    Styleguide 2.1
+Styleguide 2.1
 */
 
 
@@ -127,12 +127,12 @@ Markup:
 #Tablet Layout
 
 Markup:
-<body class="Page tablet-nav">
+<div class="Page tablet-nav">
     <header class="header"></header>
     <div class="main">
         <h1>Tablet Layout</h1>
     </div>
-</body>
+</div>
 
     Styleguide 2.2
 */
@@ -142,12 +142,12 @@ Markup:
 #Mobile Layout
 
 Markup:
-<body class="Page no-sidebar tablet-nav">
+<div class="Page no-sidebar tablet-nav">
     <header class="header"></header>
     <div class="main">
         <h1>Mobile Layout</h1>
     </div>
-</body>
+</div>
 
     Styleguide 2.3
 */
