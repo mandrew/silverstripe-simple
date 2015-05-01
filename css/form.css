@@ -108,7 +108,22 @@ textarea {
     }
 
 
-/* Messages */
+/*
+#Messages
+
+Form messages
+
+Markup:
+<form>
+    <div class="message $modifierClass">Do something</div>
+</form>
+
+.good - Good message
+.bad - Bad message
+.required - Required message
+
+Styleguide 3.3
+*/
 form .message {
     background-color: #fef4ba;
     padding: 5px 10px;
@@ -126,7 +141,22 @@ form .message {
     }
 
 
-/* ACTIONS */
+/*
+#Buttons
+
+Action buttons
+
+Markup:
+<form>
+    <div class="Actions">
+        <input class="btn $modifierClass" value="Submit">
+    </div>
+</form>
+
+.action - Action button
+
+Styleguide 3.4
+*/
 .Actions {
     margin-bottom: 20px;
 }
