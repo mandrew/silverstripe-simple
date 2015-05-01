@@ -109,14 +109,28 @@ Styleguide 2.0
 
 
 /*
-#Full Width Layout
+#Header for full width site
 
 Markup:
 <div class="Page">
-    <header class="header"></header>
-    <div class="main">
-        <h1>Full Width Layout</h1>
+    <header class="header" role="banner">
+	<div class="inner">
+		<div class="unit size4of4 lastUnit">
+            <a href="" class="brand" rel="home">
+                <h1>Your Site Name</h1>
+                <p>your tagline here</p>
+            </a>
+            <nav class="primary">
+                <span class="nav-open-button">²</span>
+                <ul>
+                        <li class="current"><a href="/" title="Home">Home</a></li>
+                        <li class="link"><a href="/about-us/" title="About Us">About Us</a></li>
+                        <li class="link"><a href="/contact-us/" title="Contact Us">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
+    </header>
 </div>
 
 Styleguide 2.1
@@ -124,14 +138,28 @@ Styleguide 2.1
 
 
 /*
-#Tablet Layout
+#Header for tablet site -
 
 Markup:
 <div class="Page tablet-nav">
-    <header class="header"></header>
-    <div class="main">
-        <h1>Tablet Layout</h1>
+    <header class="header" role="banner">
+	<div class="inner">
+		<div class="unit size4of4 lastUnit">
+            <a href="" class="brand" rel="home">
+                <h1>Your Site Name</h1>
+                <p>your tagline here</p>
+            </a>
+            <nav class="primary">
+                <span class="nav-open-button">²</span>
+                <ul>
+                        <li class="current"><a href="/" title="Home">Home</a></li>
+                        <li class="link"><a href="/about-us/" title="About Us">About Us</a></li>
+                        <li class="link"><a href="/contact-us/" title="Contact Us">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
+    </header>
 </div>
 
     Styleguide 2.2
@@ -139,14 +167,28 @@ Markup:
 
 
 /*
-#Mobile Layout
+#Mobile Header
 
 Markup:
 <div class="Page no-sidebar tablet-nav">
-    <header class="header"></header>
-    <div class="main">
-        <h1>Mobile Layout</h1>
+    <header class="header" role="banner">
+	<div class="inner">
+		<div class="unit size4of4 lastUnit">
+            <a href="" class="brand" rel="home">
+                <h1>Your Site Name</h1>
+                <p>your tagline here</p>
+            </a>
+            <nav class="primary">
+                <span class="nav-open-button">²</span>
+                <ul>
+                        <li class="current"><a href="/" title="Home">Home</a></li>
+                        <li class="link"><a href="/about-us/" title="About Us">About Us</a></li>
+                        <li class="link"><a href="/contact-us/" title="Contact Us">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
+    </header>
 </div>
 
     Styleguide 2.3
