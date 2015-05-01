@@ -1,13 +1,10 @@
-/** ----------------------------------------------------------
- *
- * This stylesheet includes both generic form styles and 
- *    additional form styles for the User Defined Form Module.
- *
- ** ------------------------------------------------------- */
+/*
+#Forms
 
+Generic form styles and additional form styles for the User Defined Form Module
 
-/* GENERIC FORMS
------------------------------------------------ */
+Styleguide 3.0
+*/
 
 form {
     max-width: 500px;
@@ -21,6 +18,24 @@ fieldset {
     margin: 0;
     padding: 0;
 }
+
+/*
+#Labels
+
+Label styles for different fields
+
+Markup:
+<form>
+<div class="field">
+    <label class="$modifierClass" for="Form_Form_Label">Label</label>
+</div>
+</form>
+
+.left - Left label
+.right - Right label
+
+Styleguide 3.1
+*/
 form label {
     margin-bottom: 5px;
 }
@@ -33,6 +48,24 @@ form label {
         color: #888;
     }
 
+/*
+#Fields
+
+Styles for different fields
+
+Markup:
+<form>
+<div class="field">
+    <div class="middleColumn">
+        <input type="text" name="Field" class="$modifierClass">
+    </div>
+</div>
+</form>
+
+.text - Text label
+
+Styleguide 3.2
+*/
 form input.text,
 form textarea,
 form .textajaxuniquetext,   /* Not sure if this is used? */
